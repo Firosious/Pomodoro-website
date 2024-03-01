@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+  <title>Pomodoro Study Online Timer - Firose</title>
+  <link rel="stylesheet" href="./pomodoro.menu.style.css" />
+  <link rel="icon" href="./Img/pencil.png" type="image/icon type" />
+</head>
+
+<body>
+  <div id="root">
+    <div class="fullscreen">
+      <div id="container">
+        <img src="https://c.tenor.com/4RYbGa1GttQAAAAC/lofi-browsing.gif" alt="./Img/lofigirlnight.gif" class="lofi-image" />
+      </div>
+    </div>
+  </div>
+
+  <div id="top-ui">
+    <div class="navbar">
+      <h1 class="logo">
+        <img src="./Img/firoselogo.png" alt="Notes Icon" class="logoicon" />
+      </h1>
+
+      <span class="menu">
+        <a href="">
+          <button class="button">
+            <img src="./Img/home.png" class="test1" title="Home" />
+            <div class="textmenu">Home</div>
+          </button>
+        </a>
+
+        <a href="">
+          <button class="button">
+            <img src="./Img/report.png" class="test1" title="Stats" />
+            <div class="textmenu">Statistics</div>
+          </button>
+        </a>
+
+        <a href="">
+          <button class="button">
+            <img src="./Img/settings.png" class="test1" title="Settings"/>
+            <div class="textmenu">Settings</div>
+          </button>
+        </a>
+
+        <a href="">
+          <button class="button">
+            <img src="./Img/about.png" class="test1" title="About"/>
+            <div class="textmenu">About</div>
+          </button>
+        </a>
+
+        <a href="pomodoro-login.html">
+          <button class="button">
+            <img src="./Img/login.png" class="test1" title="Login"/>
+            <div class="textmenu">Login</div>
+          </button>
+        </a>
+      </span>
+    </div>
+
+    <div id="MainArea">
+      <div id="one">
+        <div id="two">
+          <div id="line"></div>
+          <div id="three">
+            <h1>StudySprints - Pomodoro Clock</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="countdownarea">
+        <div class="countdownbox">
+          <div class="pomodorotimer"></div>
+          <script src="./js/pomscript.js"></script>
+          <h4>Completed Intervals: <span id="studyIntervalSet">0</span></h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="sticky-note">
+      <textarea class="textarea" rows="5" cols="20" maxlength="600" placeholder="Temporary Notes Section..."></textarea>
+    </div>
+  </div>
+  <div id="counterbox">
+    <div id="counters">
+      <ul>
+        <h4>Currently Studying: loading...</h4>
+        <h4>Total Studiers This Week: loading...</h4>
+      </ul>
+    </div>
+  </div>
+
+  <div class="dateInfo">
+    <p id="Time"></p>
+    <p id="Day"></p>
+    <p id="Month"></p>
+  </div>
+  <script src="./js/dateinfo.js"></script>
+</body>
+</html>

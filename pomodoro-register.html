@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <title>Pomodoro Study Online Timer</title>
+    <link
+      rel="stylesheet"
+      href="./pomodoro-login.css"
+    />
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="fullscreen">
+        <div id="container">
+          <img
+            src="./Img/registerwallpaper.jpg"
+            alt=""
+            class="background-image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="centermenu">
+      <a
+        href="./pomodoro-main.html"
+        class="logo"
+      >
+        <img
+          src="./Img/firoselogo.png"
+          alt="Notes Icon"
+          class="logoicon"
+        />
+      </a>
+      <div id="logintxt">Register</div>
+
+      <div id="loginmenu">
+        <div class="googlesection">
+          <button class="googlespot">Register with Google</button>
+        </div>
+
+        <div class="brakersreg">
+          <div class="brakerleft"></div>
+          <div class="brakercenter">or</div>
+          <div class="brakerright"></div>
+        </div>
+
+        <form action="signup.inc.php" method="post">
+          <div class="nameuser">
+            <div class="namemargin">
+              <div class="namesection">Full Name</div>
+              <input type="text" name="name" placeholder="Full name..." class="infobox"/>
+            </div>
+            <div class="emailmargin">
+              <div class="usernamesection">Username</div>
+              <input type="text" name="uid" placeholder="Username..." class="infobox"/>
+            </div>
+          </div>
+
+          <div class="emailsection">Email</div>
+          <input placeholder="example1@nuigalway.ie" class="infobox" value />
+
+          <div class="passwordsection">Password</div>
+          <input type="password" name="pwd" class="infobox" placeholder="Enter your password" value />
+
+          <div class="passwordsection">Confirm Password</div>
+          <input type="password" name="pwdconfirm" class="infobox" placeholder="Enter your password" value  />
+
+          <div class="loginbuttonarea">
+            <button type="submit" name="submit" class="loginbutton">
+              Register with Email
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="loginprompt">
+        <h4>Already have an account?</h4>
+        <a
+          href="./pomodoro-login.html"
+          style="
+            color: #f5c6aa;
+            text-decoration: underline wavy;
+            text-underline-offset: 3px;
+          "
+          >Login to your account!</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

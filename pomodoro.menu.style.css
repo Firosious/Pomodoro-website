@@ -1,0 +1,271 @@
+ a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
+
+@font-face {
+    font-family: 'Varela Round', sans-serif;
+    font-display: swap;
+    src: url('C:/Users/firos/Desktop/Website/Pomorodo/Fonts/Varela_Round/VarelaRound-Regular.ttf')
+    format('truetype');
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+    font-display: swap;
+    src: url('C:/Users/firos/Desktop/Website/Pomorodo/Fonts/Varela_Round/VarelaRound-Regular.ttf')
+    format('truetype');
+    background-color: #8C6057;
+}
+
+.lofi-image {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    z-index: 0;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+.navbar {
+  display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 12px;
+    max-width: 620px;
+    margin: auto;
+    justify-content: space-between;
+    background-color: inherit;
+    width: 100%;
+    height: 81px;
+    display: flex;
+    -webkit-box-pack: justify;
+}
+
+.button {
+  display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.9;
+    background: none rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+    margin-left: 10px;
+    font-size: 13px;
+    padding: 8px 12px;
+    min-width: 70px;
+    border: none;
+    color: white !important;
+}
+
+.button:hover{
+  background-color: #8C6057;
+    color: white;
+    transition: background-color 0.5s ease-in-out 0s;
+    box-sizing: border-box;
+
+}
+
+.textmenu{
+  display: block;
+  margin-left: 4px;
+}
+
+.logoicon {
+    width: 150px;
+    margin-right: 1px;
+}
+
+.logo {
+  margin: 0px;
+  padding-top: 14px;
+  padding-bottom: 4px;
+}
+
+.menu {
+  display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.test1 {
+  width: 16px;
+}
+
+#line{
+  height: 3px;
+    background-color: whitesmoke;
+    border-radius: 100px;
+    transform: translateY(-1px);
+    width: 100%;
+}
+
+#MainArea{
+  padding: 0px 12px;
+    max-width: 620px;
+    margin: auto;
+}
+
+#one{
+  text-align: center;
+}
+
+#two{
+  background-color: rgba(0, 0, 0, 0.1);
+    height: 1px;
+    margin-bottom: 40px;
+}
+
+#three{
+  	text-align: center;
+}
+
+.countdownarea{
+  margin: auto;
+  text-align: center;
+  max-width: 400px;
+}
+
+.countdownbox{
+  background-color: rgba(193, 117, 255, 0.2);
+  padding: 20px 0px 30px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.timer__part {
+  color: white;
+  font-size: 120px;
+  font-weight: bold;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.timer__btn {
+  width: 80px;
+  height: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 15%;
+  border: 0px;
+  color: white;
+  font-weight: bold;
+  background: #6602b8;
+  cursor: pointer;
+}
+
+.timer__btn--start {
+  background: #036e2a;
+}
+
+.timer__btn--stop {
+  background: #d4064b;
+}
+
+.dateInfo{
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+}
+
+#vignette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(https://www.lofi.cafe/images/vignette.png);
+  z-index: 11;
+  background-size: 100% 100%;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  opacity: 1;
+}
+
+#darken {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#top-ui {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.0);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#counterbox {
+  position: absolute;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.sticky-note {
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.textarea {
+  background-color: whitesmoke;
+  color: #044140;
+  height: 200px;
+  width: 450px;
+  padding: 1em;
+  margin-top: 2.5%;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.4;
+ 
+  resize: none;
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin-top: 34px;
+  display: inline-block;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+  line-height: 1.4em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: hsl(0, 0%, 100%);
+  margin-top: 1.8rem;
+  margin-bottom: 0em;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+textarea::placeholder {
+  color: #85817e;  
+}

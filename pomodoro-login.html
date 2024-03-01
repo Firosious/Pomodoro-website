@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <title>Pomodoro Study Online Timer</title>
+    <link
+      rel="stylesheet"
+      href="./pomodoro-login.css"
+    />
+  </head>
+
+  <body>
+    <div id="root">
+      <div class="fullscreen">
+        <div id="container">
+          <img
+            src="./Img/loginwallpaper.jpg"
+            alt=""
+            class="background-image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="centermenu">
+      <a
+        href="./pomodoro-main.html"
+        class="logo"
+      >
+        <img
+          src="./Img/firoselogo.png"
+          alt="Notes Icon"
+          class="logoicon2"
+        />
+      </a>
+      <div id="logintxt">Login</div>
+
+      <div id="loginmenu">
+        <div class="googlesection">
+          <button class="googlespot">Login with Google</button>
+        </div>
+        <div class="brakers">
+          <div class="brakerleft"></div>
+          <div class="brakercenter">or</div>
+          <div class="brakerright"></div>
+        </div>
+
+        <form action="login.inc.php" method="post">
+          <div class="emailsection">Username or Email</div>
+          <input placeholder="example1@nuigalway.ie" class="infobox" value />
+
+          <div class="passwordsection">Password</div>
+          <input type="password" name="pwd" class="infobox" placeholder="Enter your password" value />
+
+          <div class="loginbuttonarea">
+            <button type="submit" name="submit" class="loginbutton">
+              Login with Email
+            </button>
+          </div>
+        </form>
+
+        <div class="passwordforgot">
+          <a href="">Forgot My Password</a>
+        </div>
+      </div>
+
+      <div class="registerprompt">
+        <h4>What, you don't have an account yet?</h4>
+        <a
+          href="./pomodoro-register.html"
+          style="
+            color: #f5c6aa;
+            text-decoration: underline wavy;
+            text-underline-offset: 3px;
+          "
+          >Create an account!</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
